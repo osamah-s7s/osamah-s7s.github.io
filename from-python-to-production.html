@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>From Python to Production: Deploying ML for Arabic Users - Osamah Hussein</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Osamah Hussein"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Osamah Hussein">Osamah Hussein</h1>
+
+            <p class="title">Software Engineer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:Osamah0alini@gmail.com" class="contact-link"
+                  >Osamah0alini@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+923334194029" class="contact-link"
+                  >+92 (333)-419-4029</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="2000-05-22">May 22, 2000</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Lahore, Pakistan</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link">About</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link">Resume</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link">Portfolio</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link active">Blog</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #BLOG POST
+      -->
+
+        <article class="blog-post active" data-page="blog-post">
+          <header>
+            <h1 class="h1 article-title">From Python to Production: Deploying ML for Arabic Users</h1>
+            
+            <div class="blog-meta">
+              <div class="blog-meta-item">
+                <ion-icon name="calendar-outline"></ion-icon>
+                <span>January 10, 2025</span>
+              </div>
+              <div class="blog-meta-item">
+                <ion-icon name="folder-outline"></ion-icon>
+                <span>Machine Learning</span>
+              </div>
+              <div class="blog-meta-item">
+                <ion-icon name="time-outline"></ion-icon>
+                <span>7 min read</span>
+              </div>
+            </div>
+          </header>
+
+          <div class="blog-cover-image">
+            <img src="./assets/images/blog/python-production-cover.jpg" alt="From Python to Production: Deploying ML for Arabic Users" />
+          </div>
+
+          <div class="blog-content">
+            <p>Deploying machine learning models for Arabic-speaking users presents unique challenges that go beyond typical ML deployment scenarios. This post explores the journey from Python prototypes to production-ready systems that serve Arabic markets effectively.</p>
+
+            <h2>Understanding the Arabic Market Context</h2>
+            <p>Arabic-speaking users have specific needs that must be considered when deploying ML applications:</p>
+            <ul>
+              <li>Right-to-left (RTL) text rendering</li>
+              <li>Arabic text preprocessing and normalization</li>
+              <li>Cultural context in user interface design</li>
+              <li>Regional variations in Arabic dialects</li>
+              <li>Performance considerations for emerging markets</li>
+            </ul>
+
+            <h2>The Technical Stack</h2>
+            <p>For Arabic ML deployment, I've found success with this technology stack:</p>
+
+            <h3>Backend Infrastructure</h3>
+            <pre><code>
+# Flask API with Arabic text support
+from flask import Flask, request, jsonify
+import pickle
+import numpy as np
+from arabic_reshaper import arabic_reshaper
+from bidi.algorithm import get_display
+
+app = Flask(__name__)
+
+# Load pre-trained model
+model = pickle.load(open('arabic_sentiment_model.pkl', 'rb'))
+
+@app.route('/predict', methods=['POST'])
+def predict():
+    text = request.json['text']
+    # Arabic text preprocessing
+    processed_text = preprocess_arabic(text)
+    prediction = model.predict([processed_text])
+    return jsonify({'result': prediction[0]})
+            </code></pre>
+
+            <h3>Frontend Considerations</h3>
+            <p>The frontend must handle RTL layouts and Arabic typography:</p>
+            <pre><code>
+/* CSS for RTL support */
+.arabic-content {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Noto Sans Arabic', sans-serif;
+    line-height: 1.8;
+}
+
+.form-input {
+    text-align: right;
+    direction: rtl;
+}
+            </code></pre>
+
+            <h2>Data Pipeline Challenges</h2>
+            <p>Arabic text processing requires special attention to several factors:</p>
+
+            <h3>Text Normalization</h3>
+            <p>Arabic text comes with various forms of the same character. Proper normalization is crucial:</p>
+            <ul>
+              <li>Removing diacritics (tashkeel)</li>
+              <li>Normalizing different forms of letters</li>
+              <li>Handling Arabic numerals vs. Hindu-Arabic numerals</li>
+              <li>Managing punctuation and special characters</li>
+            </ul>
+
+            <h3>Tokenization Strategies</h3>
+            <p>Standard tokenization doesn't work well for Arabic. I implemented custom tokenization that considers:</p>
+            <ul>
+              <li>Word boundaries in connected script</li>
+              <li>Prefix and suffix handling</li>
+              <li>Root-based morphological analysis</li>
+            </ul>
+
+            <blockquote>
+              <p>"The key to successful Arabic ML deployment is understanding that Arabic isn't just English written in different characters – it's a fundamentally different linguistic system."</p>
+            </blockquote>
+
+            <h2>Deployment Architecture</h2>
+            <p>For production deployment, I use a microservices architecture:</p>
+
+            <h3>Service Layer</h3>
+            <ol>
+              <li><strong>API Gateway:</strong> Handles authentication and routing</li>
+              <li><strong>Text Processing Service:</strong> Dedicated Arabic text preprocessing</li>
+              <li><strong>ML Inference Service:</strong> Model predictions with caching</li>
+              <li><strong>Response Formatting Service:</strong> Formats output for Arabic UI</li>
+            </ol>
+
+            <h3>Performance Optimization</h3>
+            <p>Arabic markets often have varying internet connectivity, so optimization is crucial:</p>
+            <ul>
+              <li>Model quantization to reduce size</li>
+              <li>Aggressive caching strategies</li>
+              <li>Progressive loading for mobile users</li>
+              <li>Offline capability for critical features</li>
+            </ul>
+
+            <h2>Cultural Considerations</h2>
+            <p>Technical excellence means nothing without cultural sensitivity:</p>
+
+            <h3>User Experience Design</h3>
+            <ul>
+              <li>Color choices that respect cultural preferences</li>
+              <li>Icon selection that's culturally appropriate</li>
+              <li>Error messages in clear, respectful Arabic</li>
+              <li>Date and number formatting according to local conventions</li>
+            </ul>
+
+            <h3>Content Moderation</h3>
+            <p>Arabic content moderation requires understanding of:</p>
+            <ul>
+              <li>Religious sensitivities</li>
+              <li>Regional political contexts</li>
+              <li>Dialectal variations in offensive language</li>
+            </ul>
+
+            <h2>Monitoring and Maintenance</h2>
+            <p>Production systems need robust monitoring:</p>
+
+            <h3>Key Metrics</h3>
+            <ul>
+              <li>Arabic text processing accuracy</li>
+              <li>Response times across different regions</li>
+              <li>User engagement patterns</li>
+              <li>Error rates by Arabic dialect</li>
+            </ul>
+
+            <h3>Continuous Improvement</h3>
+            <p>Regular model updates based on:</p>
+            <ul>
+              <li>User feedback in Arabic</li>
+              <li>Performance metrics analysis</li>
+              <li>New Arabic language trends</li>
+              <li>Regional usage patterns</li>
+            </ul>
+
+            <h2>Lessons Learned</h2>
+            <p>After deploying several ML systems for Arabic users, key takeaways include:</p>
+            <ul>
+              <li>Start with cultural research, not just technical requirements</li>
+              <li>Invest heavily in Arabic text preprocessing</li>
+              <li>Test with native Arabic speakers throughout development</li>
+              <li>Plan for regional variations from day one</li>
+              <li>Performance optimization is critical for user adoption</li>
+            </ul>
+
+            <p>Deploying ML for Arabic users is both challenging and rewarding. Success requires technical expertise combined with deep cultural understanding and continuous learning from the user community.</p>
+          </div>
+
+          <div class="blog-tags">
+            <h4 class="h4">Tags</h4>
+            <div class="tag-list">
+              <span class="blog-tag">Machine Learning</span>
+              <span class="blog-tag">Arabic NLP</span>
+              <span class="blog-tag">Production Deployment</span>
+              <span class="blog-tag">Localization</span>
+              <span class="blog-tag">Cultural Design</span>
+              <span class="blog-tag">RTL Support</span>
+            </div>
+          </div>
+
+          <div class="blog-navigation">
+            <a href="./index.html" class="btn-back">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+              <span>Back</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
+

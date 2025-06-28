@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vCard - Personal Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Richard hanrick"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Osamah Hussein</h1>
+
+            <p class="title">Software Engineer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:richard@example.com" class="contact-link"
+                  >Osamah0alini@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+12133522795" class="contact-link"
+                  >+92 (333)-419-4029</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1982-06-23">May 22, 2000</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Lahore, Pakistan</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+
+          <ul class="social-list">
+            <!-- LinkedIn -->
+            <li class="social-item">
+              <a href="https://www.linkedin.com/in/engosamah/" class="social-link" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          
+            <!-- WhatsApp -->
+            <li class="social-item">
+              <a href="https://wa.me/923334194029" class="social-link" target="_blank">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+          
+            <!-- GitHub -->
+            <li class="social-item">
+              <a href="https://github.com/osamah-s7s" class="social-link" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          
+            <!-- Instagram -->
+            <li class="social-item">
+              <a href="https://www.instagram.com/osama_s7s" class="social-link" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+          
+
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I'm a passionate software engineer with a focus on AI-driven
+              solutions that connect cutting-edge technology to real-world
+              needs. My work on <strong>MediSense</strong>—an AI-powered
+              healthcare platform leveraging machine learning for predictive
+              diagnostics—showcases my ability to turn complex algorithms into
+              impactful, life-improving applications.
+            </p>
+            <p>
+              My expertise spans
+              <strong
+                >AI development, Flutter applications, and full-stack
+                systems</strong
+              >. I’ve developed intelligent solutions like a
+              <strong>disease prediction model</strong> with 98.7% accuracy,
+              trained on real clinical data to forecast potential diagnoses
+              based on patient symptoms. I’ve also implemented
+              <strong>federated learning</strong> to ensure data privacy, and
+              delivered <strong>cross-platform apps</strong> with localized UX
+              for Arabic-speaking markets. I'm particularly driven by the power
+              of <strong>predictive analytics</strong> in transforming
+              healthcare through early intervention.
+            </p>
+            <p>
+              Beyond development, I excel at
+              <strong>bridging communication gaps</strong> between technical
+              teams and non-technical stakeholders. At Bitlogicx, I’ve helped
+              align Arabic-speaking clients with development teams to ensure
+              clarity, efficiency, and user-centered design. My work combines
+              technical precision with an intuitive, human-focused approach.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What I'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-ai.svg"
+                    alt="AI icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">AI & Machine Learning</h4>
+
+                  <p class="service-item-text">
+                    Building intelligent systems like disease prediction models
+                    and computer vision solutions, combining accuracy with
+                    real-world impact.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web Development</h4>
+
+                  <p class="service-item-text">
+                    Developing scalable and secure full-stack web applications
+                    with clean architecture and modern frameworks.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="Mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile Applications</h4>
+
+                  <p class="service-item-text">
+                    Creating cross-platform Flutter apps with optimized
+                    performance and localized UX for Arabic-speaking users.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-BusinessDev.svg"
+                    alt="Communication icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Business Development</h4>
+
+                  <p class="service-item-text">
+                    Identifying growth opportunities, building client
+                    relationships, and aligning technical solutions with
+                    business goals to drive sustainable success.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials
+        -->
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Ali Khaled"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Ali Khaled
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Osamah's CardioRiskAI predicted cardiovascular disease
+                      with 77% accuracy using 70,000 patient records. His
+                      machine learning implementation delivered clinically
+                      explainable results that surpassed my requirements.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-2.png"
+                      alt="MediSense Partner"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    MediSense Partner
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Osamah's ensemble modeling in our healthcare research
+                      achieved 92% diagnostic accuracy. His innovative
+                      combination of Random Forest, Gradient Boosting, and Naive
+                      Bayes classifiers outperformed all single-model approaches
+                      we tested. The UMLS symptom encoding provided remarkable
+                      consistency across 41 disease classes, and his attention
+                      to model interpretability won over our skeptical defensive
+                      panal.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Ali Khaled"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Ali Khaled</h4>
+                <time datetime="2025-1-25">25 Jan, 2025</time>
+                <div data-modal-text>
+                  <p>
+                    Working with Osamah on CardioRiskAI demonstrated his
+                    exceptional ability to transform complex medical data into
+                    actionable AI solutions. His 77% accurate prediction model
+                    used innovative feature engineering on 70,000 patient
+                    records while maintaining full clinical explainability— a
+                    rare combination in healthcare AI.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!--
+          - clients
+        -->
+
+          <section class="clients">
+            <h3 class="h3 clients-title">Clients</h3>
+
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/1.jpg" alt="client logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/2.png" alt="client logo" />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/3.png" alt="client logo" />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Bachelor Software Engineering | Superior University Lahore
+                </h4>
+
+                <span>Oct 2021 — Jun 2025</span>
+
+                <p class="timeline-text">
+                  Thesis: MediSense – AI-Driven Healthcare Platform. Research
+                  focused on integrating AI, machine learning, and IoT for
+                  real-time health monitoring and predictive analytics. Relevant
+                  coursework included Web Development, Mobile App Development,
+                  Data Structures, Artificial Intelligence, Machine Learning,
+                  and Cloud Computing.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Lead Developer | MediSense – AI-Powered Healthcare Platform
+                </h4>
+
+                <span>2023 — Present</span>
+
+                <p class="timeline-text">
+                  Designed and developed a virtual patient assistant integrating
+                  medical device and EHR data. Built predictive models using
+                  machine learning, implemented federated learning for secure
+                  training, and ensured data privacy with encrypted storage.
+                  Created user-friendly interfaces for enhanced patient
+                  engagement.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  First Author – Pending Research Paper | Symptom-Based Disease
+                  Prediction
+                </h4>
+
+                <span>2024 — Present</span>
+
+                <p class="timeline-text">
+                  Developed a privacy-preserving ML system for disease
+                  prediction from symptoms using federated learning
+                  (TFF/PySyft). Evaluated models including decision trees,
+                  random forests, and neural networks. Tackled challenges like
+                  data bias and model explainability for decentralized
+                  healthcare diagnostics.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Business Developer and Flutter Developer | Bitlogicx
+                </h4>
+
+                <span>March 2024 — Present</span>
+
+                <p class="timeline-text">
+                  Spearheaded business development for Arabic-speaking markets,
+                  handling client communication and localization strategies.
+                  Contributed to mobile app development using Flutter and Dart,
+                  assisting in UI implementation and feature testing. Performed
+                  QA for Arabic projects, ensuring proper RTL functionality and
+                  translation.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  AI Developer | Freelance Projects
+                </h4>
+
+                <span>Nov 2022 — Present</span>
+
+                <p class="timeline-text">
+                  Developed AI-driven solutions including face mesh, pose, and
+                  hand detection systems. Created innovative products like a
+                  face-following drone using real-time detection. Delivered
+                  custom AI solutions for gesture and motion tracking with high
+                  accuracy.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Sales Representative | STARLINK AIT DUBAI UAE
+                </h4>
+
+                <span>Jan 2023 — Sept 2023</span>
+
+                <p class="timeline-text">
+                  Engaged with Arabic-speaking clients in a call center
+                  environment, demonstrating strong communication skills.
+                  Consistently achieved monthly sales targets through effective
+                  client interactions and customer-focused approach.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">AI & Machine Learning</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Business Development</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Flutter Development</h5>
+                  <data value="75">75%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Web Development</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Project Management</h5>
+                  <data value="85">85%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>AI Solutions</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Mobile Apps</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Web Development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>AI Solutions</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Mobile Apps</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Web Development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <!-- AI Solutions -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="ai solutions"
+              >
+                <a href="#"
+                  ><figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/virtual-mouse.png"
+                      alt="AI Virtual Mouse"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">AI Virtual Mouse</h3>
+                  <p class="project-category">AI Solutions</p></a
+                >
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="ai solutions"
+              >
+                <a href="#"
+                  ><figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/mask-detection.png"
+                      alt="Mask Detection"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Face Mask Detection</h3>
+                  <p class="project-category">AI Solutions</p></a
+                >
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="ai solutions"
+              >
+                <a href="#"
+                  ><figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/cardio.png"
+                      alt="Cardiovascular Prediction"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">
+                    Cardiovascular Disease Prediction
+                  </h3>
+                  <p class="project-category">AI Solutions</p></a
+                >
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="ai solutions"
+              >
+                <a href="#"
+                  ><figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/median-house.png"
+                      alt="Median House Values"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">
+                    Median House Value Prediction (CA)
+                  </h3>
+                  <p class="project-category">AI Solutions</p></a
+                >
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="ai solutions"
+              >
+                <a href="#"
+                  ><figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/pose-action.png"
+                      alt="Pose Action Detection"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Pose Action Detection System</h3>
+                  <p class="project-category">AI Solutions</p></a
+                >
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="ai solutions"
+              >
+                <a href="#"
+                  ><figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/symptom-prediction.png"
+                      alt="Disease Prediction"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Disease Prediction by Symptoms</h3>
+                  <p class="project-category">AI Solutions</p></a
+                >
+              </li>
+
+              <!-- Mobile Apps -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile apps"
+              >
+                <a href="#"
+                  ><figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/medisense.jpg"
+                      alt="MediSense"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">MediSense Health Partner</h3>
+                  <p class="project-category">Mobile Apps</p></a
+                >
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile apps"
+              >
+                <a href="#"
+                  ><figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/banyan.png"
+                      alt="Banyan"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Banyan Commercial</h3>
+                  <p class="project-category">Mobile Apps</p></a
+                >
+              </li>
+
+              <!-- Web Development -->
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#"
+                  ><figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/rawabet.png"
+                      alt="Rawabet"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Rawabet Real Estate</h3>
+                  <p class="project-category">Web Development</p></a
+                >
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#"
+                  ><figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/RIMBERIO.png"
+                      alt="RIMBERIO Shoe Store"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">RIMBERIO Shoe Store</h3>
+                  <p class="project-category">Web Development</p></a
+                >
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #BLOG
+      -->
+      <article class="blog" data-page="blog">
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+      
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+            <!-- Blog Post 1 -->
+            <li class="blog-post-item">
+              <a
+                href="./medisense-accuracy.html"
+                class="blog-post-link"
+                data-blog-id="medisense-accuracy"
+              >
+                <figure class="blog-banner-box">
+                  <img
+                    src="./assets/images/medisense-architecture-preview.jpg"
+                    alt="MediSense Architecture Preview"
+                    loading="lazy"
+                  />
+                </figure>
+      
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">AI Development</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-06-10">Jun 10, 2024</time>
+                    <span class="dot"></span>
+                    <span class="read-time">12 min read</span>
+                  </div>
+      
+                  <h3 class="h3 blog-item-title">
+                    Building MediSense: 98.7% Accuracy in Disease Prediction
+                  </h3>
+      
+                  <p class="blog-text">
+                    How we achieved record diagnostic accuracy through
+                    innovative machine learning architecture and careful
+                    medical data handling.
+                  </p>
+      
+                  <div class="blog-tags">
+                    <span class="blog-tag">Machine Learning</span>
+                    <span class="blog-tag">Healthcare</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+      
+            <!-- Blog Post 2 -->
+            <li class="blog-post-item">
+              <a
+                href="./from-python-to-production.html"
+                class="blog-post-link"
+                data-blog-id="arabic-ml-deployment"
+              >
+                <figure class="blog-banner-box">
+                  <img
+                    src="./assets/images/arabic-ml-preview.jpg"
+                    alt="Arabic ML Deployment Preview"
+                    loading="lazy"
+                  />
+                </figure>
+      
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Tutorial</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-05-22">May 22, 2024</time>
+                    <span class="dot"></span>
+                    <span class="read-time">15 min read</span>
+                  </div>
+      
+                  <h3 class="h3 blog-item-title">
+                    From Python to Production: Deploying ML for Arabic Users
+                  </h3>
+      
+                  <p class="blog-text">
+                    A complete guide to production-ready Arabic ML systems
+                    covering RTL interfaces, dialect handling, and mobile
+                    optimization.
+                  </p>
+      
+                  <div class="blog-tags">
+                    <span class="blog-tag">Arabic NLP</span>
+                    <span class="blog-tag">Flutter</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+      
+            <!-- Blog Post 3 -->
+            <li class="blog-post-item">
+              <a
+                href="./developer-business-dev.html"
+                class="blog-post-link"
+                data-blog-id="tech-business"
+              >
+                <figure class="blog-banner-box">
+                  <img
+                    src="./assets/images/tech-business-preview.jpg"
+                    alt="Tech and Business Skills Preview"
+                    loading="lazy"
+                  />
+                </figure>
+      
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Career Development</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-04-05">Apr 5, 2024</time>
+                    <span class="dot"></span>
+                    <span class="read-time">8 min read</span>
+                  </div>
+      
+                  <h3 class="h3 blog-item-title">
+                    Why Every Developer Should Learn Business Development
+                  </h3>
+      
+                  <p class="blog-text">
+                    How business skills make you a better developer, with
+                    practical lessons from my experience at Bitlogicx.
+                  </p>
+      
+                  <div class="blog-tags">
+                    <span class="blog-tag">Career Growth</span>
+                    <span class="blog-tag">Communication</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+      
+            <!-- Blog Post 4 -->
+            <li class="blog-post-item">
+              <a
+                href="./developer-acceleration.html"
+                class="blog-post-link"
+                data-blog-id="developer-acceleration"
+              >
+                <figure class="blog-banner-box">
+                  <img
+                    src="./assets/images/dev-acceleration-preview.png"
+                    alt="Developer Acceleration Tools Preview"
+                    loading="lazy"
+                  />
+                </figure>
+      
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Productivity</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-06-25">Jun 25, 2024</time>
+                    <span class="dot"></span>
+                    <span class="read-time">10 min read</span>
+                  </div>
+      
+                  <h3 class="h3 blog-item-title">
+                    Developer Acceleration: Boosting Output with Tools & Mindset
+                  </h3>
+      
+                  <p class="blog-text">
+                    Explore how top engineers accelerate development using AI
+                    tools, better workflows, and strategic time management
+                    practices.
+                  </p>
+      
+                  <div class="blog-tags">
+                    <span class="blog-tag">Productivity</span>
+                    <span class="blog-tag">Developer Tools</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+      
+            <!-- Blog Post 5 -->
+            <li class="blog-post-item">
+              <a
+                href="./top-10-se-topics.html"
+                class="blog-post-link"
+                data-blog-id="core-se-topics"
+              >
+                <figure class="blog-banner-box">
+                  <img
+                    src="./assets/images/software-engineering-topics.jpg"
+                    alt="Essential Software Engineering Topics"
+                    loading="lazy"
+                  />
+                </figure>
+      
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Software Engineering</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-06-18">Jun 18, 2024</time>
+                    <span class="dot"></span>
+                    <span class="read-time">14 min read</span>
+                  </div>
+      
+                  <h3 class="h3 blog-item-title">
+                    Top 10 Software Engineering Topics Every Pro Should Master
+                  </h3>
+      
+                  <p class="blog-text">
+                    From design patterns to CI/CD, here's a breakdown of the
+                    most essential software engineering concepts that build
+                    career-ready skills.
+                  </p>
+      
+                  <div class="blog-tags">
+                    <span class="blog-tag">System Design</span>
+                    <span class="blog-tag">Best Practices</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+      
+            <!-- Blog Post 6 -->
+            <li class="blog-post-item">
+              <a
+                href="./clean-architecture.html"
+                class="blog-post-link"
+                data-blog-id="clean-architecture"
+              >
+                <figure class="blog-banner-box">
+                  <img
+                    src="./assets/images/clean-architecture.jpg"
+                    alt="Clean Architecture Preview"
+                    loading="lazy"
+                  />
+                </figure>
+      
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Architecture</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-06-15">Jun 15, 2024</time>
+                    <span class="dot"></span>
+                    <span class="read-time">11 min read</span>
+                  </div>
+      
+                  <h3 class="h3 blog-item-title">
+                    Clean Architecture in Real-World Projects: Lessons Learned
+                  </h3>
+      
+                  <p class="blog-text">
+                    A practical dive into applying Clean Architecture in
+                    software projects—what works, common pitfalls, and how to
+                    ensure scalability.
+                  </p>
+      
+                  <div class="blog-tags">
+                    <span class="blog-tag">Clean Code</span>
+                    <span class="blog-tag">Architecture</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+      
+            <!-- Blog Post 7 -->
+            <li class="blog-post-item">
+              <a
+                href="./ai-integration.html"
+                class="blog-post-link"
+                data-blog-id="ai-integration"
+              >
+                <figure class="blog-banner-box">
+                  <img
+                    src="./assets/images/ai-integration.jpg"
+                    alt="AI Integration in Software"
+                    loading="lazy"
+                  />
+                </figure>
+      
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">AI Development</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-06-01">Jun 1, 2024</time>
+                    <span class="dot"></span>
+                    <span class="read-time">13 min read</span>
+                  </div>
+      
+                  <h3 class="h3 blog-item-title">
+                    Integrating AI into Web and Mobile Apps: What You Need to Know
+                  </h3>
+      
+                  <p class="blog-text">
+                    Learn how to connect machine learning models to production
+                    apps—from API handling to edge deployment and performance
+                    tuning.
+                  </p>
+      
+                  <div class="blog-tags">
+                    <span class="blog-tag">AI Integration</span>
+                    <span class="blog-tag">Full Stack</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+      
+            <!-- Blog Post 8 -->
+            <li class="blog-post-item">
+              <a
+                href="./automating-testing-pipeline.html"
+                class="blog-post-link"
+                data-blog-id="testing-pipeline"
+              >
+                <figure class="blog-banner-box">
+                  <img
+                    src="./assets/images/testing-pipeline.jpg"
+                    alt="Testing Pipeline Preview"
+                    loading="lazy"
+                  />
+                </figure>
+      
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">DevOps</p>
+                    <span class="dot"></span>
+                    <time datetime="2024-05-28">May 28, 2024</time>
+                    <span class="dot"></span>
+                    <span class="read-time">9 min read</span>
+                  </div>
+      
+                  <h3 class="h3 blog-item-title">
+                    Automating Your Testing Pipeline with GitHub Actions
+                  </h3>
+      
+                  <p class="blog-text">
+                    A full walkthrough to automate testing pipelines using
+                    GitHub Actions, covering unit, integration, and E2E
+                    workflows with Docker support.
+                  </p>
+      
+                  <div class="blog-tags">
+                    <span class="blog-tag">CI/CD</span>
+                    <span class="blog-tag">Automation</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+        <!-- Full Blog Post Template (Hidden by default) -->
+        <div id="full-blog-container" class="full-blog-hidden">
+          <div class="full-blog-content">
+            <button id="close-blog-btn" class="close-blog-btn">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div id="full-blog-article"></div>
+          </div>
+        </div>
+
+        <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+      
+        <!-- Interactive Map Container -->
+        <section class="mapbox" data-mapbox>
+          <div id="map-container" style="width: 100%; height: 300px; position: relative;">
+            <div
+              id="map-loading"
+              style="
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 1000;
+                background: rgba(255, 255, 255, 0.7);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <div class="spinner"></div>
+            </div>
+          </div>
+          <small>Click to select location</small>
+        </section>
+      
+        <!-- Contact Form -->
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+      
+          <form
+          action="https://formspree.io/f/xovwyaao"
+            method="POST"
+            class="form"
+            data-form
+          >
+            <div class="input-wrapper">
+              <input
+                type="text"
+                name="fullname"
+                class="form-input"
+                placeholder="Full name"
+                required
+                data-form-input
+              />
+      
+              <input
+                type="email"
+                name="email"
+                class="form-input"
+                placeholder="Email address"
+                required
+                data-form-input
+              />
+            </div>
+      
+            <!-- Location Field -->
+            <div class="location-input-wrapper">
+              <input
+                type="text"
+                name="location"
+                id="manual-location"
+                class="form-input"
+                placeholder="Type address or click map"
+                required
+              />
+              <button
+                type="button"
+                id="detect-location-btn"
+                class="location-btn"
+              >
+                <ion-icon name="locate-outline"></ion-icon>
+              </button>
+              <p id="form-response" style="margin-top: 10px;"></p>
+            </div>
+      
+            <input type="hidden" name="coordinates" id="user-coordinates" />
+      
+            <textarea
+              name="message"
+              class="form-input"
+              placeholder="Your Message"
+              required
+              data-form-input
+            ></textarea>
+      
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      
+        <!-- Leaflet CSS -->
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        />
+      </article>
+      
+      <style>
+         /* Gold text for location instruction */
+  .mapbox small {
+    color: var(--orange-yellow-crayola);
+    font-size: var(--fs-7);
+    display: block;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  /* Larger map container */
+  #map-container {
+    height: 350px !important; /* Increased from 250px */
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--jet);
+  }
+
+  /* Spinner styling */
+  .spinner {
+    border: 4px solid var(--jet);
+    border-top: 4px solid var(--orange-yellow-crayola);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Ensure proper spacing for navbar */
+  article[data-page="contact"] {
+    padding-bottom: 100px;
+  }
+      </style>
+      
+      <!-- Scripts -->
+      <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+      <script defer src="./assets/js/script.js"></script>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+        </article>
+      </div>
+    </main>
+ 
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
