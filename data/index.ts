@@ -21,11 +21,6 @@ export const techStack: TechStack[] = [
         icons: '/mongo.svg',
         name: 'MongoDB/Express'
     },
-    {
-        id: 'flutter',
-        icons: '/flutter.svg',
-        name: 'Flutter/Dart'
-    },
 
 ];
 
@@ -85,7 +80,7 @@ export const experience: Experience = {
 export const projects: Project[] = [
     {
         id: '1',
-        title: 'Rawabet Real-estate',
+        title: 'Rawabet Real Estate',
         emoji: '',
         description: 'Rawabet Real Estate is a full-stack, bilingual real estate platform designed for lead generation and property showcasing. It features a sleek UI built with Next.js App Router, a powerful Express.js backend, an RAG-powered chatbot for client interaction, and seamless email lead forwarding via MailerSend.',
         technologies: [
@@ -94,7 +89,6 @@ export const projects: Project[] = [
             'Framer Motion',
             'TypeScript',
             'React Hook Form',
-            'Zod',
             'Express.js',
             'MongoDB & Mongoose',
             'RAG System',
@@ -103,17 +97,66 @@ export const projects: Project[] = [
             'Cloudinary',
             'Multilingual (English/Arabic)'
         ],
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIHJ4PSIyMCIgZmlsbD0iI2Y4ZjlmYSIvPjxyZWN0IHg9IjIwIiB5PSIyMCIgd2lkdGg9IjM2MCIgaGVpZ2h0PSIyNjAiIHJ4PSIxNSIgZmlsbD0iIzM0MzY0OCIvPjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9ImJvbGQiPlJhd2FiZXQ8L3RleHQ+PC9zdmc+',
+        image: '/rawabet/rsre (1).png',
         images: [
-            'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIHJ4PSIyMCIgZmlsbD0iI2Y4ZjlmYSIvPjxyZWN0IHg9IjIwIiB5PSIyMCIgd2lkdGg9IjM2MCIgaGVpZ2h0PSIyNjAiIHJ4PSIxNSIgZmlsbD0iIzM0MzY0OCIvPjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9ImJvbGQiPlJhd2FiZXQ8L3RleHQ+PC9zdmc+',
-            'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIHJ4PSIyMCIgZmlsbD0iI2Y4ZjlmYSIvPjxyZWN0IHg9IjIwIiB5PSIyMCIgd2lkdGg9IjM2MCIgaGVpZ2h0PSIyNjAiIHJ4PSIxNSIgZmlsbD0iIzM0MzY0OCIvPjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9ImJvbGQiPkRhc2hib2FyZDwvdGV4dD48L3N2Zz4=',
-            'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIHJ4PSIyMCIgZmlsbD0iI2Y4ZjlmYSIvPjxyZWN0IHg9IjIwIiB5PSIyMCIgd2lkdGg9IjM2MCIgaGVpZ2h0PSIyNjAiIHJ4PSIxNSIgZmlsbD0iIzM0MzY0OCIvPjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9ImJvbGQiPkNoYXRib3Q8L3RleHQ+PC9zdmc+',
-            'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIHJ4PSIyMCIgZmlsbD0iI2Y4ZjlmYSIvPjxyZWN0IHg9IjIwIiB5PSIyMCIgd2lkdGg9IjM2MCIgaGVpZ2h0PSIyNjAiIHJ4PSIxNSIgZmlsbD0iIzM0MzY0OCIvPjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9ImJvbGQiPk1vYmlsZTwvdGV4dD48L3N2Zz4='
+            '/rawabet/rsre (1).png',
+            '/rawabet/rsre (2).png',
+            '/rawabet/rsre (3).png',
+            '/rawabet/rsre (4).png',
+            '/rawabet/rsre (5).png',
+            '/rawabet/rsre (6).png',
+            '/rawabet/rsre (7).png',
+            '/rawabet/rsre (8).png',
+            '/rawabet/rsre (9).png',
+            '/rawabet/rsre (10).png'
         ],
         previewUrl: 'https://rawabet-realestate.com/'
     },
     {
         id: '2',
+        title: 'Ajial Altarbwy Center - Educational Platform',
+        emoji: '🎓',
+        description: 'A sophisticated bilingual educational platform for Ajial Altarbwy Center operating across Qatar and Saudi Arabia. Features program management, educational trips, news/blog system, team profiles, and interactive galleries. Built with Next.js 16, the platform includes multi-region support, full RTL/LTR bilingual interface (Arabic/English), and optimized performance.',
+        technologies: [
+            'Next.js 16 (App Router)',
+            'React 19',
+            'TypeScript',
+            'Tailwind CSS 4',
+            'Framer Motion',
+            'Embla Carousel',
+            'Swiper',
+            'React Icons',
+            'Lucide React',
+            'React Hook Form',
+            'Zod Validation',
+            'React Context API',
+            'Multi-region Support (Qatar/Saudi)',
+            'Bilingual Interface (Arabic/English)',
+            'RTL/LTR Support',
+            'Custom Typography (Readex Pro, Calibri)',
+            'Next.js Image Optimization',
+            'Lazy Loading',
+            'Code Splitting',
+            'Google Maps Integration',
+            'Instagram Feed Integration',
+            'SEO Optimization'
+        ],
+        image: '/ajial/1.png',
+        images: [
+            '/ajial/1.png',
+            '/ajial/2.png',
+            '/ajial/3.png',
+            '/ajial/4.png',
+            '/ajial/5.png',
+            '/ajial/6.png',
+            '/ajial/7.png',
+            '/ajial/8.png',
+            '/ajial/9.png'
+        ],
+        previewUrl: 'https://ajial-ecru.vercel.app/'
+    },
+    {
+        id: '3',
         title: 'Faris Al-Maliki Law Firm for Legal Consultations',
         emoji: '⚖️',
         description: `A comprehensive digital ecosystem built for Faris Al-Maliki Law Firm to streamline legal services and consultations. 
@@ -142,15 +185,6 @@ export const projects: Project[] = [
             '/alfaris/3.png'
         ],
         isUnderDevelopment: true
-    },
-    {
-        id: '3',
-        title: 'Portfolio Website',
-        emoji: '',
-        description: 'A modern, responsive portfolio website showcasing projects and skills with smooth animations and SEO optimization.',
-        technologies: ['React', 'TypeScript', 'Styled Components', 'Framer Motion'],
-        image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjQwMCIgaGVpZ2h0PSIzMDAiIHJ4PSIyMCIgZmlsbD0iI2Y4ZjlmYSIvPjxyZWN0IHg9IjIwIiB5PSIyMCIgd2lkdGg9IjM2MCIgaGVpZ2h0PSIyNjAiIHJ4PSIxNSIgZmlsbD0iIzM0MzY0OCIvPjx0ZXh0IHg9IjIwMCIgeT0iMTUwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSIgZm9udC1zaXplPSIyNCIgZm9udC13ZWlnaHQ9ImJvbGQiPlBvcnRmb2xpbyB3ZWJzaXRlPC90ZXh0Pjwvc3ZnPg==',
-        previewUrl: '#'
     }
 ];
 
@@ -166,7 +200,7 @@ export const contactInfo: ContactInfo[] = [
         id: '2',
         icon: '📧',
         label: 'Email',
-        value: 'Osamah@example.com',
+        value: 'Osamah0alini@gmail.com',
         iconClass: 'email-icon'
     }
 ];
@@ -175,21 +209,21 @@ export const socialLinks: SocialLink[] = [
     {
         id: '1',
         name: 'GitHub',
-        url: 'https://github.com/osamah-hussein',
+        url: 'https://github.com/osamah-s7s',
         iconClass: 'github',
         icon: '/Github.svg'
     },
     {
         id: '2',
         name: 'LinkedIn',
-        url: 'https://linkedin.com/in/osamah-hussein',
+        url: 'https://www.linkedin.com/in/engosamah/?trk=eml-email_edge_discover_01-header-0-profile_glimmer',
         iconClass: 'linkedin',
         icon: '/Linkedin.svg'
     },
     {
         id: '3',
         name: 'Upwork',
-        url: '',
+        url: 'https://www.upwork.com/freelancers/~01475b21b8797df1b7',
         iconClass: 'upwork'
     }
 ];

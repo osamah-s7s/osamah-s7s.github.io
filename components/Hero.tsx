@@ -5,15 +5,15 @@ const Hero = () => {
     <section id="home" className="hero">
       <div className="hero-content">
         <h1>
-          <span className="mern-gradient">Full-Stack</span><br />
-          <span className="developer">Developer</span>
+          <span className="mern-gradient">Full-Stack Developer</span><br />
+          <span className="developer">& AI Engineer</span>
         </h1>
         <p>
-        Hi, I'm <strong>Osamah Hussein</strong>, a dedicated <strong>Full-Stack & Flutter Developer</strong> based in Lahore, Pakistan. 
-        I build <em>scalable, AI-driven, and bilingual web & mobile applications</em> with a focus on performance, user experience, and long-term impact.
+        Hi, I'm <strong>Osamah Hussein</strong>, an experienced <strong>Full-Stack Developer and AI Engineer</strong> in Lahore, Pakistan. 
+        I design and deliver <em>scalable web and mobile applications</em>, combining robust backend logic with an engaging user experience. My work focuses on building reliable software that drives results, using modern technology and deep practical expertise.
         </p>
 
-        <a href="#" className="cta-button">Download Resume</a>
+        <a href="/resume/Osamah.pdf" download="Osamah_Hussein_Resume.pdf" className="cta-button">Download Resume</a>
         
         <div className="hero-social-links">
           {socialLinks.filter(link => link.icon).map((link) => (

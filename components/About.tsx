@@ -19,12 +19,12 @@ const About = () => {
         <div className="about-text">
           <h2>About Me</h2>
           <h3>
-            A passionate <span className="gradient-text">Mern Stack Developer</span> based in Lahore, Pakistan
+            <span className="gradient-text">Full-Stack Developer and AI Engineer</span> based in Lahore, Pakistan
           </h3>
           <p>
-            I specialize in creating scalable, bilingual, and lead-generation web apps with clean architecture and a focus on performance. 
-            My approach blends pixel-perfect UI/UX with robust backend logic — ensuring every project is not only visually appealing 
-            but also optimized for speed, SEO, and long-term maintainability.
+            I care about building web applications that are reliable, fast, and easy for people to use—no matter the language. 
+            My approach blends thoughtful user experience with solid backend engineering, so every project I work on is designed 
+            for lasting performance, security, and growth.
           </p>
         </div>
       </div>
