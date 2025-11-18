@@ -1451,6 +1451,20 @@ footer {
         bottom: -20px;
         right: -20px;
     }
+
+    /* Fix project responsiveness on tablets */
+    .project-item {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .project-item:nth-child(even) .project-info {
+        order: 1;
+    }
+
+    .project-item:nth-child(even) .project-preview {
+        order: 2;
+    }
 }
 
 /* Image Carousel Styles */
