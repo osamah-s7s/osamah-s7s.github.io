@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: 'Osamah.dev',
     images: [
       {
-        url: 'https://osamah-s7s.github.io/profile-osos.png',
+        url: 'https://osamah-s7s.github.io/1200x630.png',
         width: 1200,
         height: 630,
         alt: 'Osamah Hussein - Full-Stack Developer & AI Engineer',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Osamah Hussein - Full-Stack Developer & AI Engineer',
     description: 'Hi, I\'m Osamah Hussein, an experienced Full-Stack Developer and AI Engineer in Lahore, Pakistan. I design and deliver scalable web and mobile applications, combining robust backend logic with an engaging user experience.',
-    images: ['https://osamah-s7s.github.io/profile-osos.png'],
+    images: ['https://osamah-s7s.github.io/1200x630.png'],
   },
   icons: {
     icon: [
