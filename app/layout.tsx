@@ -7,18 +7,19 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Osamah.dev - Full-Stack Developer & AI Engineer',
   description: 'Hi, I\'m Osamah Hussein, an experienced Full-Stack Developer and AI Engineer in Lahore, Pakistan. I design and deliver scalable web and mobile applications, combining robust backend logic with an engaging user experience.',
-  metadataBase: new URL('https://osamah.dev'), // Replace with your actual domain
+  metadataBase: new URL('https://osamah-s7s.github.io'),
   openGraph: {
     title: 'Osamah Hussein - Full-Stack Developer & AI Engineer',
     description: 'Hi, I\'m Osamah Hussein, an experienced Full-Stack Developer and AI Engineer in Lahore, Pakistan. I design and deliver scalable web and mobile applications, combining robust backend logic with an engaging user experience.',
-    url: 'https://osamah.dev', // Replace with your actual domain
+    url: 'https://osamah-s7s.github.io/',
     siteName: 'Osamah.dev',
     images: [
       {
-        url: '/profile-osos.png',
+        url: 'https://osamah-s7s.github.io/profile-osos.png',
         width: 1200,
         height: 630,
         alt: 'Osamah Hussein - Full-Stack Developer & AI Engineer',
+        type: 'image/png',
       },
     ],
     locale: 'en_US',
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Osamah Hussein - Full-Stack Developer & AI Engineer',
     description: 'Hi, I\'m Osamah Hussein, an experienced Full-Stack Developer and AI Engineer in Lahore, Pakistan. I design and deliver scalable web and mobile applications, combining robust backend logic with an engaging user experience.',
-    images: ['/profile-osos.png'],
+    images: ['https://osamah-s7s.github.io/profile-osos.png'],
   },
   icons: {
     icon: [
