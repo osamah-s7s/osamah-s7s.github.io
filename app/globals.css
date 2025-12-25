@@ -1725,15 +1725,45 @@ footer {
     }
 
     .project-item {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .project-item .project-info {
+        order: 1 !important;
+    }
+
+    .project-item .project-preview {
+        order: 2 !important;
+    }
+
+    .project-item:nth-child(even) {
+        grid-template-columns: 1fr !important;
+        display: flex !important;
+        flex-direction: column !important;
     }
 
     .project-item:nth-child(even) .project-info {
-        order: 1;
+        order: 1 !important;
     }
 
     .project-item:nth-child(even) .project-preview {
-        order: 2;
+        order: 2 !important;
+    }
+
+    .project-item:nth-child(odd) {
+        grid-template-columns: 1fr !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .project-item:nth-child(odd) .project-info {
+        order: 1 !important;
+    }
+
+    .project-item:nth-child(odd) .project-preview {
+        order: 2 !important;
     }
 
     .contact-content {

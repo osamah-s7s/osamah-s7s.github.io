@@ -151,9 +151,18 @@ export const projects: Project[] = [
             '/ajial/6.png',
             '/ajial/7.png',
             '/ajial/8.png',
-            '/ajial/9.png'
+            '/ajial/9.png',
+            '/ajial/10.png',
+            '/ajial/11.png',
+            '/ajial/12.png',
+            '/ajial/13.png',
+            '/ajial/14.png',
+            '/ajial/15.png',
+            '/ajial/16.png',
+            '/ajial/17.png',
+            '/ajial/18.png'
         ],
-        previewUrl: 'https://ajial-ecru.vercel.app/'
+        previewUrl: 'https://ajialqtr.com/'
     },
     {
         id: '3',
