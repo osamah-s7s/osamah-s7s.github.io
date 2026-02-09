@@ -5,6 +5,8 @@ This is a modern, responsive portfolio website built with Next.js 14, TypeScript
 ## Features
 
 - **Modern Tech Stack**: Next.js 14, TypeScript, React 18
+
+
 - **Responsive Design**: Mobile-first approach with CSS Grid and Flexbox
 - **Type Safety**: Full TypeScript implementation with proper interfaces
 - **Component Architecture**: Modular React components for maintainability
