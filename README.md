@@ -1,7 +1,6 @@
 # Osamah Portfolio - Next.js TypeScript Version
 
-This is a modern, responsive portfolio website built with Next.js 14, TypeScript, and React. It's a complete conversion of the original HTML portfolio to a TypeScript Next.js application.
-
+This is a modern, responsive portfolio website built with Next.js 14, TypeScript, and React.
 ## Features
 
 - **Modern Tech Stack**: Next.js 14, TypeScript, React 18
