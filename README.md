@@ -1,132 +1,41 @@
-# Osamah Portfolio - Next.js TypeScript Version
-
-This is a modern, responsive portfolio website built with Next.js 14, TypeScript, and React.
-## Features
-
-- **Modern Tech Stack**: Next.js 14, TypeScript, React 18
-
-
-- **Responsive Design**: Mobile-first approach with CSS Grid and Flexbox
-- **Type Safety**: Full TypeScript implementation with proper interfaces
-- **Component Architecture**: Modular React components for maintainability
-- **SEO Optimized**: Next.js built-in SEO features
-- **Performance**: Optimized images and code splitting
-
-## Project Structure
-
-```
-├── app/
-│   ├── globals.css          # Global styles
-│   ├── layout.tsx           # Root layout component
-│   └── page.tsx             # Home page
-├── components/
-│   ├── About.tsx            # About section component
-│   ├── Contact.tsx           # Contact form component
-│   ├── Experience.tsx       # Experience section component
-│   ├── Footer.tsx           # Footer component
-│   ├── Header.tsx           # Navigation header component
-│   ├── Hero.tsx             # Hero section component
-│   ├── Projects.tsx         # Projects showcase component
-│   └── TechStack.tsx        # Tech stack component
-├── data/
-│   └── index.ts             # Portfolio data and content
-├── types/
-│   └── index.ts             # TypeScript interfaces and types
-├── next.config.js           # Next.js configuration
-├── package.json             # Dependencies and scripts
-└── tsconfig.json           # TypeScript configuration
-```
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-### Prerequisites
+First, run the development server:
 
-- Node.js 18+ 
-- npm or yarn
-
-### Installation
-
-1. Install dependencies:
-```bash
-npm install
-# or
-yarn install
-```
-
-2. Set up EmailJS (for contact form - works with static hosting like GitHub Pages):
-   - Sign up for a free account at [https://www.emailjs.com](https://www.emailjs.com)
-   - Create an email service (Gmail, Outlook, etc.)
-   - Create an email template with these variables:
-     - `{{to_email}}` - Recipient (set to: osamah0alini@gmail.com)
-     - `{{from_name}}` - Sender's name
-     - `{{from_email}}` - Sender's email
-     - `{{location}}` - Sender's location
-     - `{{coordinates}}` - GPS coordinates
-     - `{{message}}` - Message content
-     - `{{subject}}` - Email subject
-   - Get your Service ID, Template ID, and Public Key
-   - Open `components/Contact.tsx` and replace:
-     - `YOUR_SERVICE_ID` with your EmailJS Service ID
-     - `YOUR_TEMPLATE_ID` with your EmailJS Template ID
-     - `YOUR_PUBLIC_KEY` with your EmailJS Public Key
-   - These keys are safe to hardcode as they're meant for client-side use
-
-3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Build for Production
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-```bash
-npm run build
-npm start
-```
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Key Improvements from HTML Version
+## Learn More
 
-1. **Type Safety**: All components are properly typed with TypeScript interfaces
-2. **Component Reusability**: Modular components for better maintainability
-3. **State Management**: React hooks for interactive features
-4. **Performance**: Next.js optimizations for faster loading
-5. **SEO**: Built-in meta tags and structured data
-6. **Developer Experience**: Better debugging and development tools
+To learn more about Next.js, take a look at the following resources:
 
-## Technologies Used
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-- **Framework**: Next.js 14
-- **Language**: TypeScript
-- **Styling**: CSS Modules with global styles
-- **UI Components**: Custom React components
-- **Icons**: Emoji-based icons for simplicity
-- **Images**: SVG data URIs for placeholder images
-- **Email Service**: EmailJS for contact form emails (works with static hosting)
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Customization
+## Deploy on Vercel
 
-### Adding New Projects
-Edit `data/index.ts` and add new project objects to the `projects` array.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-### Modifying Content
-Update the data in `data/index.ts` to change portfolio content.
-
-### Styling Changes
-Modify `app/globals.css` for global styles or individual component files for component-specific styles.
-
-## Deployment
-
-This project can be deployed to:
-- Vercel (recommended for Next.js)
-- Netlify
-- AWS Amplify
-- Any hosting service that supports Node.js
-
-## License
-
-This project is for portfolio purposes. Feel free to use as inspiration for your own portfolio.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
 
+---------------------
+
+I still need to make the content changes and ensure everythiing is alined perfectly

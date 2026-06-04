@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+:root {
+  /* #2B2B2B - Very Dark Grey: For main headings and important titles */
+  --heading-text:#2B2B2B; 
+  
+  /* #B99C67 - Elegant Gold: For emphasis text, highlights, borders, animated elements (dots, rings), and accents */
+  --important-text:#B99C67;
+  
+  /* #7B8088 - Cool Grey: For secondary text, subtitles, and supporting content */
+  --sub-text:#7B8088;
+
+  /* #FDFDFD - Off-White: Primary background color for main sections */
+  --background:#FDFDFD;
+  
+  /* #EFE9E1 - Light Beige: Subtle background for alternating sections and soft contrasts */
+  --subtle-background:#EFE9E1;
+
+}
+
+@theme inline {
+  /* Color Tokens - Apply semantic meaning to CSS variables */
+  --color-heading:var(--heading-text);      /* Use for: Main headings (h1, h2, h3) */
+  --color-main:var(--important-text);       /* Use for: Highlights, CTAs, borders, star/loader animations */
+  --color-sub:var(--sub-text);              /* Use for: Subtitles, descriptions, supporting text */
+
+  --color-background:var(--background);              /* Use for: Main page backgrounds */
+  --color-subtle-background:var(--subtle-background); /* Use for: Alternate section backgrounds */
+  
+  /* Font Families */
+  --font-sans: var(--font-poppins);   /* English text */
+  --font-arabic: var(--font-bukra);   /* Arabic text */
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  direction: rtl;
+}
+
+[dir="ltr"] {
+  direction: ltr;
+}
+
+/* Smooth transitions for direction changes */
+* {
+  transition: margin 0.3s ease, padding 0.3s ease;
+}
+
+/* RTL-specific adjustments */
+[dir="rtl"] .font-sans {
+  font-family: var(--font-bukra);
+}
+
+[dir="ltr"] .font-sans {
+  font-family: var(--font-poppins);
+}
+
+/* Loading Screen Animations */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes spin-slower {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-gentle {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.95;
+  }
+}
+
+@keyframes ping-slow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.3;
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse 12s linear infinite;
+}
+
+.animate-spin-slower {
+  animation: spin-slower 20s linear infinite;
+}
+
+.animate-pulse-gentle {
+  animation: pulse-gentle 3s ease-in-out infinite;
+}
+
+.animate-ping-slow {
+  animation: ping-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.duration-800 {
+  transition-duration: 800ms;
+}
+
+/* Hide Scrollbar Utility */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
